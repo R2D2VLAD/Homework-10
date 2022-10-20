@@ -39,16 +39,22 @@ public class lesson10 {
         expenses[27] = 199000;
         expenses[28] = 133000;
         expenses[29] = 121000;
-        int monthlyExpenses = (expenses[0] + expenses[1] + expenses[2] + expenses[3] + expenses[4] + expenses[5] + expenses[6] + expenses[7] + expenses[8] + expenses[9] + expenses[10] + expenses[11] + expenses[12] + expenses[13] + expenses[14] + expenses[15] + expenses[16] + expenses[17] + expenses[18] + expenses[19] + expenses[20] + expenses[21] + expenses[22] + expenses[23] + expenses[24] + expenses[25] + expenses[26] + expenses[27] + expenses[28] + expenses[29]);
+        int monthlyExpenses = (expenses[0] + expenses[1] + expenses[2] + expenses[3] + expenses[4]
+                + expenses[5] + expenses[6] + expenses[7] + expenses[8] + expenses[9] + expenses[10]
+                + expenses[11] + expenses[12] + expenses[13] + expenses[14] + expenses[15]
+                + expenses[16] + expenses[17] + expenses[18] + expenses[19] + expenses[20]
+                + expenses[21] + expenses[22] + expenses[23] + expenses[24] + expenses[25]
+                + expenses[26] + expenses[27] + expenses[28] + expenses[29]);
         System.out.println("Сумма трат за месяц составила " + monthlyExpenses + " рублей");
 
-        int maxSpendingPerDay = 100;
+
+        int maxSpendingPerDay = 100000;
         for (int i = 0; i < expenses.length; i++) {
             if (expenses[i] > maxSpendingPerDay) {
                 maxSpendingPerDay = expenses[i];
             }
         }
-        int minSpendingPerDay = 250000;
+        int minSpendingPerDay = 200000;
         for (int i = 0; i < expenses.length; i++) {
             if (expenses[i] < minSpendingPerDay) {
                 minSpendingPerDay = expenses[i];
@@ -56,7 +62,7 @@ public class lesson10 {
         }
         System.out.println("Минимальная сумма трат за день составила " + minSpendingPerDay + " рублей.Максимальная сумма трат за день составила " + maxSpendingPerDay + " рублей");
 
-        double averageAmount = (monthlyExpenses/30);
+        double averageAmount = (monthlyExpenses / 30);
         System.out.println("Средняя сумма трат за месяц составила " + averageAmount + " рублей");
 
         //Задание 4
@@ -65,8 +71,5 @@ public class lesson10 {
         for (int i = reverseFullName.length - 1; i >= 0; i--) {
             System.out.print(reverseFullName[i]);
         }
-
-
-
     }
 }
